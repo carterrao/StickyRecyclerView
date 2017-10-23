@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="这里是header开始"
+        android:textStyle="bold"/>
+
+    <ImageView android:id="@+id/ivPic"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="中华人民共和国是我们伟大的祖国，共有34个省级行政区：4个直辖市（北京、天津、上海、重庆）；5个自治区（内蒙古自治区、新疆维吾尔族自治区、西藏自治区、宁夏回族自治区、广西壮族自治区）；23个省（黑龙江、吉林、辽宁、山东、山西、河南、河北、陕西、青海、四川、甘肃、云南、贵州、广东、海南、福建、台湾、浙江、江苏、安徽、江西、湖南、湖北）；香港、澳门2个特别行政区"
+        android:background="#fff"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="12dp"
+        android:background="#ddd" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="这里是header结束"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#ddd" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">StickyRecyclerViewLib</string>
+
+    <string name="refresh_recycler_view_header_normal">下拉刷新</string>
+    <string name="refresh_recycler_view_header_ready">松开刷新数据</string>
+    <string name="refresh_recycler_view_loading">正在加载&#8230;</string>
+    <string name="refresh_recycler_view_header_last_time">上次更新时间：</string>
+    <string name="refresh_recycler_view_footer_no_more">没有更多了</string>
+</resources>
