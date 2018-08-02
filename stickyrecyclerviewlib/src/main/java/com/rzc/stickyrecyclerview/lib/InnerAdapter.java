@@ -157,13 +157,17 @@ class InnerAdapter<GD, CD, GH extends BaseGroupHolder, CH extends BaseChildHolde
     }
 
     public void expandGroup(int groupIndex) {
-        groupStateArr[groupIndex].expand = true;
-        notifyDataSetChanged();
+        if (groupIndex >= 0 && groupIndex < groupStateArr.length) {
+            groupStateArr[groupIndex].expand = true;
+            notifyDataSetChanged();
+        }
     }
 
     public void collapseGroup(int groupIndex) {
-        groupStateArr[groupIndex].expand = false;
-        notifyDataSetChanged();
+        if (groupIndex >= 0 && groupIndex < groupStateArr.length) {
+            groupStateArr[groupIndex].expand = false;
+            notifyDataSetChanged();
+        }
     }
 
     @Override

@@ -88,6 +88,16 @@ public abstract class StickyRecyclerViewAdapter<GH extends BaseGroupHolder, CH e
         }
     }
 
+    public void scrollGroupToTop(boolean expand) {
+        GridLayoutManager mgr = (GridLayoutManager) mStickyRecyclerView.mRecyclerView.getLayoutManager();
+        mgr.scrollToPositionWithOffset(StickyRecyclerViewHolderType.HOLDER_TYPE_GROUP - StickyRecyclerViewHolderType.HOLDER_TYPE_REFRESH, getOffset());
+        if (expand) {
+            innerAdapter.expandGroup(0);
+        } else {
+            innerAdapter.collapseGroup(0);
+        }
+    }
+
     GridLayoutManager mGridLayoutManager;
     int mSpanCount = 1;
     void setAdapter() {
